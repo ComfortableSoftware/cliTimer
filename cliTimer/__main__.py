@@ -1,7 +1,7 @@
 #!/usr/bin/env /usr/bin/python
 
 
-import cliTimer.timeitVars as V
+import cliTimer.VARS as V
 
 
 V.V = V

@@ -18,8 +18,8 @@ setup(
   author_email="will.angus.blaylock@gmail.com",
   license="GPLv3",
   name="cliTimer",
-  url="https://github.com/ComfortableSoftware/commonFunctions_py",
-  version="1.0.0",
+  url="https://github.com/ComfortableSoftware/cliTimer",
+  version="0.8.0",
   keywords=[
       "CLI",
       "Command line",
