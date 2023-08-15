@@ -19,7 +19,7 @@ setup(
   license="GPLv3",
   name="cliTimer",
   url="https://github.com/ComfortableSoftware/cliTimer",
-  version=,
+  version=VS.VERSION,
   keywords=[
       "CLI",
       "Command line",

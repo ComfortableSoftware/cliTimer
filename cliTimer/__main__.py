@@ -1,7 +1,7 @@
 #!/usr/bin/env /usr/bin/python3
 
 
-import clitimer.VARS as V
+import cliTimer.VARS as V
 
 
 V.V = V
@@ -148,7 +148,7 @@ def __main__():
   V.CF_OPT.V.sys.exit(-1)
 #   _TStr_ = f"""
 # Nothing to do, nothing done, try again.
-# `clitimer -h` for help
+# `cliTimer -h` for help
 # """
 #   V.CF_OS.throwError(
 #       message_=_TStr_,
