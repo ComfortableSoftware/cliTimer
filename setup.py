@@ -3,12 +3,12 @@
 #
 #
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * start of CF.setup.py
+# * start of CSCF.setup.py
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 #
 #
 
-
+from cliTimer import __VERSION__ as VS
 from setuptools import find_packages
 from setuptools import setup
 
@@ -19,7 +19,7 @@ setup(
   license="GPLv3",
   name="cliTimer",
   url="https://github.com/ComfortableSoftware/cliTimer",
-  version="0.8.0",
+  version=,
   keywords=[
       "CLI",
       "Command line",
@@ -31,9 +31,9 @@ setup(
           "../doc/*",
       ],
   },
-  packages=["cliTimer"],
+  packages=find_packages(),
   install_requires=[
-      "CF",
+      "CSCF",
   ],
   extras_require={
   },
