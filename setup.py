@@ -8,9 +8,10 @@
 #
 #
 
-from cliTimer import __VERSION__ as VS
+#from cliTimer import __VERSION__ as VS
 from setuptools import find_packages
 from setuptools import setup
+from datetime import datetime as DT
 
 
 setup(
