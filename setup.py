@@ -1,20 +1,11 @@
 
 
-#
-#
-# * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * start of CSCF.setup.py
-# * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-#
-#
-
-#from cliTimer import __VERSION__ as VS
 from setuptools import find_packages
 from setuptools import setup
 from datetime import datetime as DT
 
 
-__VERSION__ = DT.now().strftime("%Y.%m.%d.%H%M%S")
+__VERSION__ = DT.now().strftime("%Y.%m.%d.%H%M")
 with open("cliTimer/__VERSION__.py", "tw") as _FD_OUT_:
   _FD_OUT_.write(f"""\n\n__VERSION__ = \"{__VERSION__}\"\n\n#\n""")
 
@@ -26,11 +17,6 @@ setup(
   name="cliTimer",
   url="https://github.com/ComfortableSoftware/cliTimer",
   version=__VERSION__,
-  keywords=[
-      "CLI",
-      "Command line",
-      "timer",
-  ],
   package_dir={"cliTimer": "cliTimer"},
   package_data={
       "cliTimer": [
@@ -40,12 +26,10 @@ setup(
   packages=find_packages(),
   install_requires=[
       "CSCF",
-      "datedelta",
-      "python-dateutil",
-  ],
-  extras_require={
-  },
+    ],
   scripts=[
-      "scripts/cliTimer",
   ],
 )
+
+
+#
